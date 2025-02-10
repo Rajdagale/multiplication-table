@@ -15,10 +15,17 @@ function res(){
     document.getElementById('TableResult').innerHTML = "";
     
     //this is the for loop condition
-    for(var i=b ; i<=c; i++){  
-        // var output = (`${a} x ${i} = ${a*i}`);
-        //here is the result in this condition it will result = result + condition
-        document.getElementById('TableResult').innerHTML = document.getElementById('TableResult').innerHTML + "<br>" + `${a} x ${i} = ${a*i}`;
+  if (b<=c) {
+        for(var i=b ; i<=c; i++){  
+            // var output = (`${a} x ${i} = ${a*i}`);
+            //here is the result in this condition it will result = result + condition
+            document.getElementById('TableResult').innerHTML = document.getElementById('TableResult').innerHTML + "<br>" + `${a} x ${i} = ${a*i}`;
+        }   
+    }else{
+        for(var i=b ; i>=c; i--){ 
+            
+            document.getElementById('TableResult').innerHTML = document.getElementById('TableResult').innerHTML + "<br>" + `${a} x ${i} = ${a*i}`;
+        }  
     }
 
     /*
